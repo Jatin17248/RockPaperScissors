@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+	text-align: center;
+}
+::selection{
+	background-color: red;
+	color: green;
+}
+h1 {
+    color: #ffffff;
+	background-color: #ac0e0ed6;
+	margin: 0;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+h5{
+    color: #ffffff;
+	background-image: linear-gradient(-60deg, blue, purple, pink, orange, red, orange, pink, purple, blue);
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+.choices{
+	margin-top: 5rem;
+	display: flex;
+	gap: clamp(1rem, 3rem, 5rem);
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+.choice{
+	width: 100px;
+	height: 100px;
+	border: 10px solid #ac0e0ed6;
+	border-radius: 50%;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+}
+
+.choice img{
+	width: 100px;
+	height: 100px;
+	border: 10px solid #ac0e0ed6;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: all 0.3s ease;
+}
+
+.choice img:hover{
+	width: 95px;
+	height: 95px;
+	border: 15px solid green;
+	border-radius: 45%;
+	opacity: 0.5;
+}
+.choice:hover{
+	border: 1px solid red;
+}
+.score-board{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 3rem;
+	
+}
+.score{
+	
+}
+.score-board p{
+	font-size: 1.5rem;
+	margin:0;
+	padding:0;
+}
+#user-score, #comp-score, #ttl-game, #drawg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4rem;
+	height:150px;
+	width: clamp(3rem, 8rem, 10rem);
+	border-radius: 4px;
+	border: 1px solid black;
+	box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px rgb(00 00 00 / 48%);
+	overflow: clip;
+}
+
+.msg-container{
+	margin-top: 4rem;
+}
+
+#msg{
+	font-size: 2rem;
+	line-height: 2rem;
+	display: inline;
+	border-radius: 20px;
+	background-color: black;
+	color: #ffffff;
+	padding:2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	 transition: all 0.3s ease;
+}
+/*
+#msg:hover{
+	font-size: 2.2rem;
+	line-height: 2.2rem;
+	display: inline;
+	border-radius: 30px;
+	background-color: grey;
+	color: green;
+	border: 5px solid red;
+	
+}
+*/
+
+@media only screen and (max-width: 600px) {
+    /* Adjust the max-width as needed for your specific design */
+    #extra1 {
+        display: none;
+    }
+}
